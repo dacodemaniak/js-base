@@ -16,5 +16,11 @@ export const contacts = [
         lastName: 'Pascal',
         occupation: 'Developer',
         company: 'Aélion'
+    },
+    {
+        firstName: 'Bill',
+        lastName: 'Gates',
+        occupation: 'Retired',
+        company: 'Microsoft'
     }
 ]

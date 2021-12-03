@@ -41,4 +41,10 @@ export class Contact {
     getCompany() {
         return this.company
     }
+
+    deserialize(backendDatas) {
+        Object.assign(this, backendDatas)
+
+        return this
+    }
 }
