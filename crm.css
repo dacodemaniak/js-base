@@ -31,3 +31,7 @@ div.inner-splash {
     top: 50%;
     transform: translateY(-50%);
 }
+
+div.outer-splash.hidden {
+    display: none;
+}
