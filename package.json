@@ -9,7 +9,8 @@
     "serve": "./node_modules/http-server/bin/http-server -c-1 -o",
     "win:webpack:dev": ".\\node_modules\\.bin\\webpack --watch",
     "win:webpack:build": ".\\node_modules\\.bin\\webpack",
-    "win:start:dev": ".\\node_modules\\.bin/webpack --watch && .\\node_modules\\http-server\\bin\\http-server -c-1 -o"
+    "win:start:dev": ".\\node_modules\\.bin\\webpack --watch",
+    "win:serve": ".\\node_modules\\http-server\\bin\\http-server -c-1 -o"
   },
   "keywords": [
     "JS",
