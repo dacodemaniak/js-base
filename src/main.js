@@ -3,7 +3,7 @@ import { Contact } from "./models/contact";
 import { Route } from "./router/route";
 import { Router } from "./router/router";
 import { ContactService } from "./services/contact-service";
-import { RowHelper } from "./_helpers/row-helper";
+import { RowHelper } from "./_helpers/composite/row";
 
 const router = new Router()
 router.register('/', new HomeController())

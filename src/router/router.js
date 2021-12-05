@@ -8,13 +8,18 @@ export class Router {
     register(path, controller) {
         const route = new Route()
         route.register(path, controller)
-
-        console.log(`Add ${JSON.stringify(route)}`)
         this.router.set(route.path, controller)
     }
 
     navigate() {
-        let dock = document.querySelector('appDock')
+        const dock = document.querySelector('appDock')
+
+        // Remove all previous nodes into dock
+        let child = dock.lastChild
+        while (child) {
+            dock.removeChild(child)
+            child = dock.lastChild
+        }
 
         const uri = location.hash.slice(1) || '/'
 
