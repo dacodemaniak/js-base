@@ -3,7 +3,7 @@ import { TextNode } from "../composite/text-node"
 export class TableBuilder {
     constructor(composer) {
         this.composer = composer
-        this.builder = null
+        this.builder = document.querySelector('tbody')
     }
 
     build() {
@@ -11,7 +11,7 @@ export class TableBuilder {
             if (this.composer.hasChildren()) {
                 // Every children is a composer itself
                 for (let composer of this.composer.getChildren()) {
-                    this.builder = new TableBuilder(composer).build()
+                    this.builder.appendChild(new TableBuilder(composer).build())
                     console.log(`Builder is ${JSON.stringify(this.builder)}`)
                 }
             } else {
