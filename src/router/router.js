@@ -27,6 +27,8 @@ export class Router {
 
         if (dock && controller) {
             controller.load(dock)
+        } else {
+            throw new Error(`Path with ${uri} was not found`)
         }
     }
 }
