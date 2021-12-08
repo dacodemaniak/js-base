@@ -8,7 +8,7 @@ export class Router {
     register(path, controller) {
         const route = new Route()
         route.register(path, controller)
-        this.router.set(route.path, controller)
+        this.router.set(route.path, route.controller)
     }
 
     navigate() {
