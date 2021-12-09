@@ -1,3 +1,4 @@
+import { ContactController } from "./controllers/contact-controller";
 import { DefaultController } from "./controllers/default-controller";
 import { HomeController } from "./controllers/home-controller";
 import { Contact } from "./models/contact";
@@ -8,6 +9,7 @@ import { RowHelper } from "./_helpers/composite/row";
 
 const router = new Router()
 router.register('/', new DefaultController())
+router.register('/contact', new ContactController())
 
 window.addEventListener(
     'hashchange',

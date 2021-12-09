@@ -1,4 +1,4 @@
-export class DefaultController {
+export class ContactController {
     constructor() {
         this.dock = null
     }
@@ -12,7 +12,7 @@ export class DefaultController {
         .then((template) => {
             this.dock.innerHTML = template
             const h1 = this.dock.querySelector('h1')
-            h1.innerText = 'Hello Default'
+            h1.innerText = 'Contact Form'
         })
     }
 

@@ -1,3 +1,5 @@
+@import url('./variables.css');
+
 body {
     margin: 0;
     padding: 0;
@@ -34,4 +36,29 @@ div.inner-splash {
 
 div.outer-splash.hidden {
     display: none;
+}
+
+/**
+* Menu styling
+**/
+nav {
+    color: var(--nav-link-color);
+    font-variant: small-caps;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
 }
