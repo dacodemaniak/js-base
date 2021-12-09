@@ -1,0 +1,11 @@
+:root {
+    --nav-link-color: hsl(255, 52%, 65%);
+    /**
+    * Named colors : pink, maroon, lightgreen
+    * Safe-Palette : #000 to #FFF
+    * Hexa : #0000000 to #FFFFFF
+    * RGB / RGBA : rgb(abs, abs, abs, 0-1) rgb(ratio, ratio, ratio, 0-1)
+    *   rgb(96%, 25%, 10%)
+    * HSL (Hue Saturation Luminance) : hsl(abs, ratio, ratio, 0-1)
+    */
+}

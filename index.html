@@ -9,6 +9,7 @@
         </title>
 
         <!-- Links to stylesheets -->
+        <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
         <link href="./crm.css" rel="stylesheet">
 
         <!-- Here goes script -->
@@ -18,38 +19,22 @@
     <body>
 
         <div class="container fluid">
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            &nbsp;
-                        </th>
-                        <th>
-                            Lastname
-                        </th>
-                        <th>
-                            Firstname
-                        </th>
-                        <th>
-                            Occupation
-                        </th>
-                        <th>
-                            Company
-                        </th>
-                        <th>&nbsp;</th>
-                    </tr>
-                </thead>
+            <nav>
+                <ul role="list">
+                    <li class="link">
+                        <a href="/#" title="Home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="/#/contact" title="Contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-                <tbody></tbody>
-
-                <tfoot>
-                    <tr>
-                        <td colspan="6">
-                            <span id="items-number">0</span> item(s)
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
+            <appDock></appDock>
         </div>
 
         <!-- Splash screen -->
